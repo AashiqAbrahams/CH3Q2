@@ -5,6 +5,9 @@ public class Person
 {
     private String name;
     private boolean male = false;
+    private boolean happy = false;
+    private boolean reallyHappy = true;
+
 
     public Person(String name){
         this.name = name;
@@ -33,5 +36,12 @@ public class Person
         return "I am male!";
     }
 
+    public boolean isHappy(){
+        return happy;
+    }
+
+    public boolean isReallyHappy(){
+        return reallyHappy;
+    }
 }
 
