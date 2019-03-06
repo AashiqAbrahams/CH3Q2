@@ -53,5 +53,17 @@ public class PersonTest {
         String msg = aashiq.getGenderMessage();
         assertEquals("I am male", msg);
     }
+
+    @Test //Adding test for false
+    public void testUnhappyToStart() throws Exception{
+        assertFalse(aashiq.isHappy());
+    }
+
+    @Test //Adding test for true
+    public void testHappyToEnd() throws Exception{
+        assertTrue(aashiq.isReallyHappy());
+    }
+
+
 }
 
